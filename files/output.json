@@ -1,0 +1,28 @@
+{
+    "event_log": {
+        "id": {
+            "dataSample": "123",
+            "tribeOwner": "3",
+            "isPII": true,
+            "typePII": "C3"
+        },
+        "channel": {
+            "dataSample": "sample",
+            "tribeOwner": "3",
+            "isPII": false,
+            "typePII": ""
+        },
+        "name": {
+            "dataSample": "sample",
+            "tribeOwner": "3",
+            "isPII": false,
+            "typePII": ""
+        },
+        "created_time": {
+            "dataSample": "2023-04-11 12:04:09.329015 +0700 Asia/Jakarta",
+            "tribeOwner": "3",
+            "isPII": false,
+            "typePII": ""
+        }
+    }
+}

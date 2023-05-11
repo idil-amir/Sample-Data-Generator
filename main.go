@@ -18,19 +18,6 @@ type Data struct {
 	TypePII    string `json:"typePII"`
 }
 
-// input column data here
-type Column struct {
-	ID          Data `json:"id"           dataType:"int"        tribeOwner:"3" isPII:"true"  typePII:"C3"`
-	Channel     Data `json:"channel"      dataType:"string"     tribeOwner:"3" isPII:"false" typePII:""`
-	Name        Data `json:"name"         dataType:"string"     tribeOwner:"3" isPII:"false" typePII:""`
-	CreatedTime Data `json:"created_time" dataType:"timestamp"  tribeOwner:"3" isPII:"false" typePII:""`
-}
-
-// input table data here
-type Table struct {
-	EventLog Column `json:"event_log"`
-}
-
 func main() {
 	table := Table{}
 	column := Column{}
@@ -53,6 +40,8 @@ func main() {
 			dataSample = "123"
 		case "string":
 			dataSample = "sample"
+		case "json":
+			dataSample = "{}"
 		case "timestamp":
 			now := time.Now().In(time.FixedZone("Asia/Jakarta", 7*3600))
 			dataSample = now.String()
